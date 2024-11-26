@@ -14,64 +14,35 @@
       rel="stylesheet"
       href="style.css"
     />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon-16x16.png"
-    />
-    <link
-      rel="manifest"
-      href="/site.webmanifest"
-    />
     <title>Handleliste</title>
   </head>
   <body>
     <div class="container">
       <img
         src="assets/image_ph.png"
-        alt="A cat inside a cart"
+        alt="Handleliste"
       />
       <input
         type="text"
         id="input-field"
-        placeholder="Item"
+        placeholder="Skriv her..."
       />
       <div id="action-button">
-        <button id="add-button">Add to cart</button>
-        <button id="clear-button">Clear cart</button>
+        <button id="add-button">Frukt/Brød</button>
+        <button id="add-button">Kjøl/Frys</button>
+        <button id="add-button">Meieri</button>
+        <button id="add-button">Drikke</button>
+        <button id="add-button">Bake/Tørr</button>
+        <button id="add-button">Snacks</button>
       </div>
-      <p id="empty-list">No item here... yet</p>
-
+      <p id="empty-list">Tom handleliste</p>
       <ul id="shopping-list"></ul>
-
       <div id="toast-container"></div>
+      <div id="delete-button">
+        <button id="clear-button">Tøm handleliste</button>
+      </div>
     </div>
-
+    
     <script
       src="app.js"
       type="module"

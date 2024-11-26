@@ -71,7 +71,7 @@ function addItemToShoppingList(itemValue) {
   );
 
   if (existingItem) {
-    showToast("Item already exists!", true); // Display a toast message indicating the item already exists
+    showToast("Den har du allerede... 🤭", true); // Display a toast message indicating the item already exists
     return; // Exit the function to avoid adding the item again
   }
 
@@ -81,7 +81,7 @@ function addItemToShoppingList(itemValue) {
   clearInputField(); // Clear the input field
 
   if (!isPageReload) {
-    showToast("Item added successfully");
+    showToast("Lagt til! 👌");
   }
 
   createItemElement(item);
@@ -97,7 +97,7 @@ function createItemElement(item) {
   itemEl.addEventListener("dblclick", function () {
     removeItemFromShoppingList(item.id);
     itemEl.remove();
-    showToast("Item removed successfully!");
+    showToast("Ska ikkje ha d asså? 😲");
     updateEmptyListState(); // Update the empty list state
   });
 
@@ -145,8 +145,8 @@ function showToast(message, isError = false) {
     toast.classList.remove("show");
     setTimeout(function () {
       toast.remove();
-    }, 300); // Remove the toast from the DOM after the animation duration
-  }, 500); // Delay the toast display to ensure smooth animation
+    }, 500); // Remove the toast from the DOM after the animation duration
+  }, 700); // Delay the toast display to ensure smooth animation
 }
 
 // mark an item as bought
@@ -182,6 +182,6 @@ function updateEmptyListState() {
 clearListButton.addEventListener("click", function () {
   localStorage.removeItem("shoppingList");
   clearAddToShoppingList();
-  showToast("Cart cleared successfully!");
+  showToast("Vart tomt gitt! 🤪");
   updateEmptyListState();
 });

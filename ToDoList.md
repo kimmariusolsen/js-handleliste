@@ -1,4 +1,4 @@
-fork: https://dev.to/obere4u/build-a-simple-shopping-list-app-with-javascript-38ln
+forked from: https://dev.to/obere4u/build-a-simple-shopping-list-app-with-javascript-38ln
 
 <h1>TODO</h1>
 
@@ -8,6 +8,7 @@ fork: https://dev.to/obere4u/build-a-simple-shopping-list-app-with-javascript-38
 - Sortere handleliste etter kategorier
 - Knapp nederst for å nullstille avkryssning
 - Knapp nederst for å nullstille handleliste med bekreftelse
+- Sortere handleliste alfabetisk
 - Database på proxmox, API til frontend for å lagre data
 - Hoste på handleliste.kimmarius.eu
 - Lage pålogging, brukernavn/passord
